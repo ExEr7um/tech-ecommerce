@@ -1,0 +1,21 @@
+{
+  "name": "tech-ecommerce",
+  "version": "0.0.0",
+  "description": "ВКР на тему «Интернет-магазин компьютерной техники»",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ExEr7um/tech-ecommerce"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Vasily Kuzin",
+    "email": "exer7um@gmail.com",
+    "url": "https://github.com/ExEr7um"
+  },
+  "scripts": {
+    "dev": "pnpm --stream -r dev",
+    "lint": "pnpm --stream -r lint",
+    "lint:fix": "pnpm --stream -r lint:fix",
+    "prettier": "pnpm --stream -r prettier"
+  }
+}

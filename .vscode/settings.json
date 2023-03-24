@@ -1,0 +1,23 @@
+{
+  "cSpell.language": "en,ru",
+  "editor.codeActionsOnSave": [
+    "source.addMissingImports",
+    "source.organizeImports",
+    "source.fixAll"
+  ],
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+  "git.branchProtection": ["main"],
+  "git.followTagsWhenSync": true,
+  "gitlens.defaultDateFormat": "D MMMM YYYY в H:mm",
+  "gitlens.defaultDateLocale": null,
+  "gitlens.defaultTimeFormat": "H:mm",
+  "gitlens.statusBar.enabled": false,
+  "markdown.extension.toc.levels": "2..6",
+  "tailwindCSS.emmetCompletions": true,
+  "tailwindCSS.experimental.configFile": ".nuxt/tailwind.config.cjs"
+}

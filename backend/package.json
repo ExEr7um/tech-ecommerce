@@ -1,0 +1,52 @@
+{
+  "name": "tech-ecommerce-backend",
+  "version": "0.0.0",
+  "description": "Бекенд Интернет-магазина компьютерной техники",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ExEr7um/tech-ecommerce"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Vasily Kuzin",
+    "email": "exer7um@gmail.com",
+    "url": "https://github.com/ExEr7um"
+  },
+  "scripts": {
+    "build": "strapi build",
+    "dev": "strapi develop",
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts --ignore-path .gitignore",
+    "lint:fix": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts --fix --ignore-path .gitignore",
+    "prettier": "prettier --write *",
+    "start": "strapi start",
+    "strapi": "strapi"
+  },
+  "dependencies": {
+    "@strapi/plugin-i18n": "4.8.2",
+    "@strapi/plugin-users-permissions": "4.8.2",
+    "@strapi/strapi": "4.8.2",
+    "better-sqlite3": "8.0.1"
+  },
+  "devDependencies": {
+    "@nuxt/eslint-config": "^0.1.1",
+    "eslint": "^8.36.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-jsdoc": "^40.1.0",
+    "eslint-plugin-sort-keys-fix": "^1.1.2",
+    "eslint-plugin-tsdoc": "^0.2.17",
+    "eslint-plugin-typescript-sort-keys": "^2.3.0",
+    "eslint-plugin-vue": "^9.10.0",
+    "prettier": "^2.8.7",
+    "prettier-plugin-css-order": "^1.3.0",
+    "prettier-plugin-packagejson": "^2.4.3",
+    "prettier-plugin-sort-json": "^1.0.0",
+    "prettier-plugin-tailwindcss": "^0.2.5"
+  },
+  "engines": {
+    "node": ">=14.19.1 <=18.x.x",
+    "npm": ">=6.0.0"
+  },
+  "strapi": {
+    "uuid": "4e33ba0b-d768-4f85-9080-38e46b9235f7"
+  }
+}
