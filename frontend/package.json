@@ -13,33 +13,33 @@
   },
   "dependencies": {
     "@formkit/auto-animate": "1.0.0-beta.6",
-    "@nuxtjs/tailwindcss": "6.6.4",
-    "@vueuse/components": "9.13.0",
-    "@vueuse/core": "9.13.0",
-    "@vueuse/nuxt": "9.13.0",
-    "nuxt": "3.3.2",
+    "@nuxtjs/tailwindcss": "6.6.6",
+    "@vueuse/components": "10.0.2",
+    "@vueuse/core": "10.0.2",
+    "@vueuse/nuxt": "10.0.2",
+    "nuxt": "3.4.1",
     "nuxt-font-loader": "2.3.1",
     "nuxt-headlessui": "1.1.1",
     "nuxt-icon": "0.3.3",
     "vite-svg-loader": "4.0.0",
-    "vue-imask": "6.4.3"
+    "vue-imask": "6.5.1"
   },
   "devDependencies": {
     "@nuxt/eslint-config": "^0.1.1",
-    "@types/node": "18.15.9",
-    "eslint": "^8.36.0",
+    "@types/node": "18.15.11",
+    "eslint": "^8.38.0",
     "eslint-config-prettier": "^8.8.0",
-    "eslint-plugin-jsdoc": "^40.1.0",
+    "eslint-plugin-jsdoc": "^41.1.1",
     "eslint-plugin-sort-keys-fix": "^1.1.2",
     "eslint-plugin-tsdoc": "^0.2.17",
     "eslint-plugin-typescript-sort-keys": "^2.3.0",
-    "eslint-plugin-vue": "^9.10.0",
+    "eslint-plugin-vue": "^9.11.0",
     "prettier": "^2.8.7",
     "prettier-plugin-css-order": "^1.3.0",
     "prettier-plugin-packagejson": "^2.4.3",
     "prettier-plugin-sort-json": "^1.0.0",
-    "prettier-plugin-tailwindcss": "^0.2.5",
-    "typescript": "5.0.2"
+    "prettier-plugin-tailwindcss": "^0.2.7",
+    "typescript": "5.0.4"
   },
   "packageManager": "pnpm@7.30.3"
 }
