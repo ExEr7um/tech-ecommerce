@@ -14,6 +14,11 @@ export default defineNuxtConfig({
     "nuxt-headlessui",
     "nuxt-icon",
   ],
+  runtimeConfig: {
+    public: {
+      apiBase: "http://localhost:1337/api",
+    },
+  },
   tailwindcss: {
     viewer: false,
   },
