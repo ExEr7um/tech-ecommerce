@@ -8,6 +8,7 @@ export default defineNuxtConfig({
     },
   },
   modules: [
+    "@nuxtjs/strapi",
     "@nuxtjs/tailwindcss",
     "@vueuse/nuxt",
     "nuxt-font-loader",
