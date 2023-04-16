@@ -4,7 +4,8 @@
   "info": {
     "singularName": "product",
     "pluralName": "products",
-    "displayName": "Product"
+    "displayName": "Product",
+    "description": ""
   },
   "options": {
     "draftAndPublish": false
@@ -21,12 +22,12 @@
       "required": true
     },
     "image": {
-      "allowedTypes": [
-        "images"
-      ],
       "type": "media",
       "multiple": false,
-      "required": true
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
     },
     "brand": {
       "type": "relation",
@@ -34,11 +35,44 @@
       "target": "api::brand.brand",
       "inversedBy": "products"
     },
+    "price": {
+      "type": "integer",
+      "required": true
+    },
+    "budget": {
+      "type": "enumeration",
+      "enum": [
+        "Бюджетный",
+        "Средний",
+        "Дорогой"
+      ],
+      "required": true
+    },
     "purpose": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::purpose.purpose",
-      "inversedBy": "products"
+      "type": "enumeration",
+      "enum": [
+        "Для игр",
+        "Для дома",
+        "Для работы"
+      ],
+      "required": true
+    },
+    "rgb": {
+      "type": "enumeration",
+      "enum": [
+        "Без подсветки",
+        "С подсветкой",
+        "С RGB-подсветкой"
+      ],
+      "required": true
+    },
+    "delivery": {
+      "type": "enumeration",
+      "enum": [
+        "Быстрая",
+        "Долгая"
+      ],
+      "required": true
     }
   }
 }
