@@ -4,7 +4,11 @@
 
 @layer base {
   html {
-    @apply bg-neutral-950 text-white;
+    @apply bg-neutral-950 text-sm text-white sm:text-base;
+  }
+
+  h1 {
+    @apply text-3xl sm:text-4xl lg:text-5xl;
   }
 
   p {
@@ -14,6 +18,14 @@
 
 @layer components {
   .button {
-    @apply flex items-center justify-center gap-2 rounded border border-neutral-800 bg-neutral-900 p-3 transition-colors hover:bg-neutral-800;
+    @apply flex w-max items-center justify-center gap-2 rounded border p-3 transition-colors;
+  }
+
+  .button.primary {
+    @apply border-lime-200 bg-lime-300 text-neutral-950 hover:bg-lime-200;
+  }
+
+  .button.secondary {
+    @apply border-neutral-800 bg-neutral-900 hover:bg-neutral-800;
   }
 }

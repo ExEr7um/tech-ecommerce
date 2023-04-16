@@ -1,5 +1,12 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+useSeoMeta({
+  description: "ВКР на тему «Интернет-магазин компьютерной техники».",
+  title: "Главная",
+})
+</script>
 
 <template>
-  <div></div>
+  <div>
+    <TheHero />
+  </div>
 </template>
