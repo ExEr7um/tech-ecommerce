@@ -9,10 +9,7 @@ defineProps<{
 
 <template>
   <div class="flex flex-col gap-y-8">
-    <div class="flex items-center gap-x-4">
-      <Icon :name="category.icon" />
-      <h2>{{ category.title }}</h2>
-    </div>
+    <ProductsCategory :icon="category.icon" :title="category.title" />
     <ProductsList :category="categoryId" />
   </div>
 </template>

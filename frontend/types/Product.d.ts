@@ -37,3 +37,13 @@ interface Product {
   /** Дата изменения */
   updatedAt: Date
 }
+
+/** Информация о товаре */
+interface ProductAbout {
+  /** Описание */
+  description: string
+  /** Иконка из Iconify */
+  icon: string
+  /** Заголовок */
+  title: string
+}
