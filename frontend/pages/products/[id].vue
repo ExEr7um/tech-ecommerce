@@ -54,6 +54,7 @@ const about: ProductAbout[] = [
           <h1>{{ product.data.attributes.title }}</h1>
         </div>
         <p>{{ product.data.attributes.description }}</p>
+        <ProductsPrice :price="product.data.attributes.price" />
         <button class="button primary px-6">Добавить в корзину</button>
       </div>
     </div>
