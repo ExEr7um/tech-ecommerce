@@ -29,6 +29,11 @@ const about: ProductAbout[] = [
     title: "Подсветка",
   },
 ]
+
+/** Корзина */
+const cart: Ref<number[]> = useCookie("cart", {
+  default: () => [],
+})
 </script>
 
 <template>
@@ -55,7 +60,20 @@ const about: ProductAbout[] = [
         </div>
         <p>{{ product.data.attributes.description }}</p>
         <ProductsPrice :price="product.data.attributes.price" />
-        <button class="button primary px-6">Добавить в корзину</button>
+        <button
+          v-if="cart.includes(product.data.id)"
+          class="button secondary px-6"
+          @click="cart.splice(cart.indexOf(product.data.id), 1)"
+        >
+          Удалить из корзины
+        </button>
+        <button
+          v-else
+          class="button primary px-6"
+          @click="cart.push(product.data.id)"
+        >
+          Добавить в корзину
+        </button>
       </div>
     </div>
     <ProductsAbout :about-list="about" />
