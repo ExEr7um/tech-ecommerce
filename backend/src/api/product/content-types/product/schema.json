@@ -39,45 +39,34 @@
       "type": "integer",
       "required": true
     },
-    "budget": {
-      "type": "enumeration",
-      "enum": [
-        "Бюджетный",
-        "Средний",
-        "Дорогой"
-      ],
-      "required": true
-    },
-    "purpose": {
-      "type": "enumeration",
-      "enum": [
-        "Для игр",
-        "Для дома",
-        "Для работы"
-      ],
-      "required": true
-    },
-    "rgb": {
-      "type": "enumeration",
-      "enum": [
-        "Без подсветки",
-        "С подсветкой",
-        "С RGB-подсветкой"
-      ],
-      "required": true
-    },
-    "delivery": {
-      "type": "enumeration",
-      "enum": [
-        "Быстрая",
-        "Долгая"
-      ],
-      "required": true
-    },
     "category": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::category.category",
+      "inversedBy": "products"
+    },
+    "budget": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::budget.budget",
+      "inversedBy": "products"
+    },
+    "purpose": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::purpose.purpose",
+      "inversedBy": "products"
+    },
+    "rgb": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::rgb.rgb",
+      "inversedBy": "products"
+    },
+    "delivery": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::delivery.delivery",
       "inversedBy": "products"
     }
   }

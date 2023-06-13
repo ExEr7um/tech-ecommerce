@@ -1,37 +1,24 @@
 /** Продукт */
 interface Product {
-  brand?: {
-    data: {
-      attributes: Brand
-      id: number
-    }
-  }
+  brand?: StrapiRelation<Brand>
   /** Бюджет продукта */
-  budget: string
-  category?: {
-    data: {
-      attributes: Category
-      id: number
-    }
-  }
+  budget?: StrapiRelation<Budget>
+  /** Категория продукта */
+  category?: StrapiRelation<Category>
   /** Дата создания */
   createdAt: Date
   /** Скорость доставки продукта */
-  delivery: string
+  delivery: StrapiRelation<Delivery>
   /** Описание продукта */
   description: string
-  image?: {
-    data: {
-      attributes: StrapiImage
-      id: number
-    }
-  }
+  /** Изображение продукта */
+  image?: StrapiRelation<StrapiImage>
   /** Цена продукта */
   price: number
   /** Назначение продукта */
-  purpose: string
+  purpose: StrapiRelation<Purpose>
   /** Наличие/отсутствие подсветки у продукта */
-  rgb: string
+  rgb: StrapiRelation<RGB>
   /** Название продукта */
   title: string
   /** Дата изменения */
@@ -41,7 +28,7 @@ interface Product {
 /** Информация о товаре */
 interface ProductAbout {
   /** Описание */
-  description: string
+  description?: string
   /** Иконка из Iconify */
   icon: string
   /** Заголовок */

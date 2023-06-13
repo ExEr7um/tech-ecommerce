@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "rgbs",
+  "info": {
+    "singularName": "rgb",
+    "pluralName": "rgbs",
+    "displayName": "RGB"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "products": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::product.product",
+      "mappedBy": "rgb"
+    }
+  }
+}

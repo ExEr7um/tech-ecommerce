@@ -9,22 +9,22 @@ const product = await useStrapi().findOne<Product>(
 
 const about: ProductAbout[] = [
   {
-    description: product.data.attributes.budget,
+    description: product.data.attributes.budget?.data.attributes.title,
     icon: "heroicons:currency-dollar",
     title: "Бюджет",
   },
   {
-    description: product.data.attributes.delivery,
+    description: product.data.attributes.delivery?.data.attributes.title,
     icon: "heroicons:truck",
     title: "Доставка",
   },
   {
-    description: product.data.attributes.purpose,
+    description: product.data.attributes.purpose?.data.attributes.title,
     icon: "heroicons:user",
     title: "Назначение",
   },
   {
-    description: product.data.attributes.rgb,
+    description: product.data.attributes.rgb?.data.attributes.title,
     icon: "heroicons:fire",
     title: "Подсветка",
   },

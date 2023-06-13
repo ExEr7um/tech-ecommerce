@@ -28,3 +28,10 @@ interface StrapiImage {
   url: string
   width: number
 }
+
+interface StrapiRelation<T> {
+  data: {
+    attributes: T
+    id: number
+  }
+}
